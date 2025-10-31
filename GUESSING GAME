@@ -1,0 +1,36 @@
+/*
+NAME: GODFREY HINGA NDUNGU
+REG NO: CT101/G/26515/25
+DATE: 09/10/2025
+DESCRIPTION: WHILE LOOP FOR A NUMBER GUESSING GAME
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int Lucky_number = 6;
+    int guess;
+
+    while (1)  // loop until correct guess
+    {
+        printf("ENTER YOUR LUCKY NUMBER: ");
+        scanf("%d", &guess);
+
+        if (guess == Lucky_number)
+        {
+            printf("CONGRATULATIONS! YOU'VE WON!\n");
+            break; // exit loop
+        }
+        else if (guess < Lucky_number)
+        {
+            printf("TOO LOW! TRY AGAIN.\n");
+        }
+        else if (guess > Lucky_number)
+        {
+            printf("TOO HIGH! TRY AGAIN.\n");
+        }
+    }
+
+    return 0;
+}

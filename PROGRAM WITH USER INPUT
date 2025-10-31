@@ -1,0 +1,33 @@
+/*
+NAME:GODFREY HINGA NDUNGU
+REG NO: CT101\G\26515\25
+DATE 23\9\2025
+DESCRIPTION: C PROGRAM PROMPTING THE USER TO ENTER THE HEIGHT, BANK BALANCE AND PHONE NUMBER
+
+*/
+
+
+#include<stdio.h>
+
+int main()
+
+{
+    int main();
+    
+    printf("enter your height \n");
+    scanf("height \n");
+    
+    int main();
+    
+    printf(" enter your bank balance \n");
+    scanf(" bank balance \n");
+    
+    int main();
+    
+    printf(" enter your phone number \n");
+    scanf(" phone number \n");
+    
+    
+    return 0;
+    
+}

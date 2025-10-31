@@ -1,0 +1,36 @@
+/*
+NAME: GODFREY HINGA NDUNGU
+REG NO: CT101\G\26515\25
+DATE: 30\09\2025
+DESCRIPTION:EXAM ELIGIBILITY
+*/
+
+#include<stdio.h>
+
+int main() 
+{
+ int average_marks; // stored as percentage, e.g. 60 means 60%
+ int attendance;  // stored as percentage, e.g. 80 means 80%
+ 
+ 
+  // students details
+ 
+    printf("Enter student's average marks: \n");
+     scanf("%d",&average_marks);
+    
+    printf("Enter students attendance ( out of 100): \n");
+     scanf("%d", &attendance);
+    
+        if (average_marks>=40 && attendance>=75) {
+     printf("ELIGIBLE FOR THE EXAM! \n");
+          
+          }
+           else if (average_marks < 40) {
+           printf("NOT ELIGIBLE! \n");
+           }
+           else if (attendance < 75) {
+           printf("NOT ELIGIBLE!");   
+          }
+          
+   return 0;
+     }          

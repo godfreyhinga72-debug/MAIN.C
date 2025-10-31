@@ -1,0 +1,34 @@
+/*
+NAME: GODFREY HINGA NDUNGU
+REG NO: CT101\G\26515\25
+DATE: 24\09\2025
+DESCRIPTION: C PROGRAM ON BANK SERVICES
+*/
+
+#include<stdio.h>
+int main() 
+  {
+ // Variable Descriptin
+ int age;
+ float annual_income;
+ 
+ //take user input
+ 
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    
+    printf("Enter your annual_income in kenyan shillings?: ");
+    scanf("%f",&annual_income);
+    
+    //check for qualifications and display output
+    
+    if(age >=21 &&annual_income >= 21000.0){
+    
+    printf(" Congraturations! You qualify for a loan ");
+    }
+    else{
+    printf("Unfortunatelly, we are unable to offer you a loan at this time: ");
+    }
+    
+    return 0;
+    }

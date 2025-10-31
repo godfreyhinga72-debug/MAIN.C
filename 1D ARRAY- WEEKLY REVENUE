@@ -1,0 +1,35 @@
+/* 
+NAME; GODFREY HINGA NDUNGU
+REG NO; CT101/G/26515/25
+DATE; 29TH OCT, 2025.
+DESCRIPTION; 1D ARRAY - WEEKLY REVENUE TRACKER
+*/
+
+#include<stdio.h>
+
+int main (){
+int revenue[7] = { 12000 , 13000 , 14000 , 15000 , 16000,17000, 18000};
+  int n = sizeof(revenue)/sizeof(revenue[0]);
+  int sum = 0;
+  int i;
+  for (i = 0; i < n; i++){
+    sum += revenue[i];
+   }
+  
+  float average = sum/n;
+     
+      printf("revenue: ");
+      for (int i = 0; i  < n; i++){
+        printf("%d", revenue[i]);
+        }
+        
+        printf(" \n");
+        
+         printf(" The Total weekly revenue is KES %d \n", sum);
+        printf(" The average weekly revenue is KES %.2f \n", average);
+    
+    return 0;
+
+
+
+}

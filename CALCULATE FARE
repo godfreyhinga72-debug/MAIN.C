@@ -1,0 +1,36 @@
+/*NAME; GODFREY HINGA NDUNGU
+REG NO; CT101/G/26515/25
+DATE; 22nd OCT,2025
+DESCTIPTION; C FAUNCTION FOR CALCULATING FARE
+*/
+
+#include<stdio.h>
+
+int multiplication (int x, int y);
+  int multiplication( int distance, int cost);
+  int cost = 50;
+  int distance;
+  int Total_fare;
+  
+  int main ()
+  {
+  
+printf("ENTER THE DISTANCE TRAVELLED \t");
+ scanf("%d ", &distance);
+
+   if (distance > 0)
+ {
+    Total_fare = multiplication( distance , cost);
+ printf(" The Total_fare is : Kes %d \n", Total_fare);
+ }
+ return 0;
+ 
+ 
+}
+
+int multiplication (int distance, int cost)
+{
+  Total_fare = distance * cost;
+  
+  return Total_fare;
+ }

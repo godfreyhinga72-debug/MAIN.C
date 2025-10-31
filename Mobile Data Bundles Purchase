@@ -1,0 +1,50 @@
+/*
+NAME;GODFREY HINGA NDUNGU
+REG NO;CT101\G\26515\25
+DATE;30th SEP, 2025
+DESCRIPTION; MOBILE DATA BUNDLES PURCHASE
+*/
+
+#include<stdio.h>
+
+int main()
+{
+ int choice;
+ 
+   //Display Internet data bundles menu
+   
+    printf("choose an Internet Data Bundle: \n");
+    printf("1. 100MB   - KES 50 \n");
+    printf("2. 500MB   - KES 200 \n");
+    printf("3. 1 GB    - KES 350 \n");
+    printf("4. 2 GB    - KES 600 \n");
+    
+    printf(" Enter your choice (1-4)");
+    scanf("%d", &choice);
+    
+    
+        // switch statement to handle choice
+        switch(choice) {
+        
+          case 1:
+            printf(" You have selected 100 MB Bundles. Cost KES 50 \n");
+            break;
+          case 2:
+            printf("You have selected 500 MB Bundles. Cost: KES 350 \n");    
+            break;
+          case 3:
+            printf("You have selected 1 GB Bundles. Cost: KES 350 \n");  
+            break;
+          case 4:
+            printf(" You have selected 2 GB Bundle. Cost:  KES 600 \n");
+            
+           default:
+            
+            printf(" Invalid Choice! Please try again and select between options 1 and 4. \n");
+            
+       }
+           
+           
+             return 0;
+             
+    }

@@ -1,0 +1,90 @@
+/*
+NAME; GODFREY HINGA NDUNGU
+REG NO; CT101/G/26515/26515
+DATE; 30 OCTOBER,2025.
+DESCRIPTION; 3D ARRAY- MUTIPLE BRANCHES
+*/
+
+#include <stdio.h>
+
+int main() {
+    int chain[3][5][10];
+    int branch, floor, room;
+    int occupied, vacant, totalOccupied = 0, totalVacant = 0;
+
+    
+    
+    int data1[5][10] = {
+        {1,0,1,1,0,1,1,1,0,1},
+        {1,1,1,0,1,0,1,1,1,0},
+        {0,1,1,1,1,1,0,1,0,1},
+        {1,0,1,1,0,1,1,0,1,1},
+        {1,1,0,1,1,1,1,0,1,0}
+    };
+
+    
+    
+    int data2[5][10] = {
+        {1,1,1,1,0,1,0,1,1,1},
+        {0,1,0,1,1,0,1,1,1,0},
+        {1,1,0,0,1,1,1,1,0,1},
+        {1,1,1,0,1,1,1,1,0,1},
+        {0,1,1,1,1,0,1,1,1,1}
+    };
+
+    
+    
+    int data3[5][10] = {
+        {1,0,1,1,1,1,1,1,1,0},
+        {1,1,0,1,1,1,0,1,1,1},
+        {0,1,1,0,1,1,1,1,1,0},
+        {1,1,1,1,0,1,0,1,1,1},
+        {1,0,1,1,1,1,1,0,1,0}
+    };
+
+    
+    
+    for (branch = 0; branch < 3; branch++) {
+        for (floor = 0; floor < 5; floor++) {
+            for (room = 0; room < 10; room++) {
+                if (branch == 0)
+                    chain[branch][floor][room] = data1[floor][room];
+                else if (branch == 1)
+                    chain[branch][floor][room] = data2[floor][room];
+                else
+                    chain[branch][floor][room] = data3[floor][room];
+            }
+        }
+    }
+
+
+
+    for (branch = 0; branch < 3; branch++) {
+        printf("\n==============================\n");
+        printf("BRANCH %d OCCUPANCY STATUS\n", branch + 1);
+        printf("==============================\n\n");
+
+        for (floor = 0; floor < 5; floor++) {
+            occupied = 0;
+            vacant = 0;
+            printf("Floor %d: ", floor + 1);
+            for (room = 0; room < 10; room++) {
+                printf("%d ", chain[branch][floor][room]);
+                if (chain[branch][floor][room] == 1)
+                    occupied++;
+                else
+                    vacant++;
+            }
+            printf("\n--> Occupied: %d | Vacant: %d\n\n", occupied, vacant);
+            totalOccupied += occupied;
+            totalVacant += vacant;
+        }
+    }
+
+    printf("========================================\n");
+    printf("Total Occupied Rooms in All Branches: %d\n", totalOccupied);
+    printf("Total Vacant Rooms in All Branches:   %d\n", totalVacant);
+    printf("========================================\n");
+
+    return 0;
+}

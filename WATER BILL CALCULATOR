@@ -1,0 +1,38 @@
+/*
+NAME:GODFREY HINGA NDUNGU
+REG NO:CT101/G/26515/25
+DATE:1/10/2025
+DESCRIPTION: WATER BILL CALCULATOR
+*/
+
+#include<stdio.h>
+
+int main()
+{
+  int units;
+  float Total_water_bill; //expressed in KES
+  
+   // User information
+    printf("Enter the number of water units consumed \t");
+    scanf("%d", &units);
+    
+    if (units >= 0 &&units <= 30){
+       Total_water_bill = units * 20;   // 20 KES per unit
+      printf("Total_water_bill is: %2f KES\n", Total_water_bill);
+      }
+      else if(units >= 31 &&units <= 60){
+      Total_water_bill  = units * 25;    // 25 KES per unit
+      printf("Total_water_bill is: %2f KES \n", Total_water_bill);
+      }
+      
+      else if( units >= 60){
+       Total_water_bill = units * 30;    // 30 KES per unit
+       printf("Total_water_bill is: %2f KES \n", Total_water_bill);
+       
+       }
+         else { 
+         printf(" Invalid input!. \n");
+        }
+    return 0;
+    
+}

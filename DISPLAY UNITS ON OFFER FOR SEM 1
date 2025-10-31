@@ -1,0 +1,25 @@
+/*
+NAME: GODFREY HINGA NDUNGU
+REG NO: CT101\G\26515\25
+DATE: 22\9\2025
+DESCRIPTION;A C PROGRAM TO DISPLAY THE UNITS FOR SEMESTER ONE
+
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    printf("Mathematics for science \n");
+    printf("Programming and problem solving \n");
+    printf("Discrete Mathematics \n");
+    printf("Physics \n");
+    printf("Analogue Electronics \n");
+    printf("Communication skills \n");
+    printf("Fundamentals of ICT \n");
+    printf("Computer architecture \n");
+    
+    
+    
+    return 0;
+}
